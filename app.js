@@ -8,7 +8,7 @@ const Mydata = require('./models/myData')
 app.use(express.static('public'));
 
 app.get("/", (req,res)=>{
-    res.sendFile('./views/index.html', {root: __dirname})
+    res.sendFile('./api/index.html', {root: __dirname})
 })
 
 mongoose.connect('mongodb+srv://moonlight:moo4light432@cluster0.bykl4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
